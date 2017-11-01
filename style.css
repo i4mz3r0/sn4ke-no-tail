@@ -1,22 +1,6 @@
+body{
+	text-align: center;
+}
 canvas{
 	background: #444;
-}
-#controls{
-	width:97%
-	position: absolute;
-}
-input{
-	position: relative;
-	width:70px;
-	height:40px;
-	background:#fff;
-}
-#left{
-	float: left;
-}
-#right{
-	float: right;
-}
-#top{
-	float: right;
 }
