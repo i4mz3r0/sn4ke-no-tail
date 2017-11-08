@@ -20,7 +20,7 @@ window.addEventListener('keydown',function(e){
 		}
 	}
 function randpos(){
-	x=(Math.floor((Math.random() * 79) + 1))*10;
+	x=(Math.floor((Math.random() * 78) + 1))*10;
 	return x;
 }
 rx=randpos(); 
@@ -29,19 +29,19 @@ jx=randpos();
 jy=randpos(); 
 s = new snake();
 a = new apple(); 
-const v=9; 
+var v=4; 
 var score=0;
 function frame(){
 	requestAnimationFrame(frame);
 	switch(drt){
 		case 'l':
-			rx=(rx<1)?800:rx-v;
+			rx=(rx<1)?799:rx-v;
 			break;
 		case 'r':
 			rx=(rx>799)?0:rx+v;
 			break;
 		case 't':
-			ry=(ry<1)?800:ry-v;
+			ry=(ry<1)?799:ry-v;
 			break;
 		case 'd':
 			ry=(ry>799)?0:ry+v;
@@ -56,6 +56,7 @@ function frame(){
 		score++;
 		jx=randpos();
 		jy=randpos();
+		v=v+0.5;
 	}
 	c.font="30px Sans";
 	c.fillStyle="#fff";
