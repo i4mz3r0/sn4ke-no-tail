@@ -29,7 +29,7 @@ jx=randpos();
 jy=randpos(); 
 s = new snake();
 a = new apple(); 
-var v=1; 
+var v=1.5; 
 var score=0;
 function frame(){
 	requestAnimationFrame(frame);
